@@ -1,4 +1,5 @@
-import { HomeIcon, Library, Search } from "lucide-react";
+import { PlaylistComponent } from "./Components/Playlist";
+import { HomeIconComponent, LibraryIconComponent, SearchIconComponent } from "./Components/Icons/Icons";
 
 export function Sidebar() {
   return (
@@ -9,56 +10,20 @@ export function Sidebar() {
             <div className="w-3 h-3 bg-green-500 rounded-full" />
           </div>
           <nav className="space-y-5 mt-10">
-            <a
-              href=""
-              className="flex items-center gap-3 text-sm font-semibold text-zinc-200"
-            >
-              <HomeIcon />
-              Home
-            </a>
-            <a
-              href=""
-              className="flex items-center gap-3 text-sm font-semibold text-zinc-200"
-            >
-              <Search />
-              Search
-            </a>
-            <a
-              href=""
-              className="flex items-center gap-3 text-sm font-semibold text-zinc-200"
-            >
-              <Library />
-              Your Library
-            </a>
+            <HomeIconComponent />
+            <SearchIconComponent />
+            <LibraryIconComponent />
           </nav>
           <nav className="mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-4">
-            <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">
-              Aniversarios
-            </a>
-            <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">
-              Top Hits Brazil
-            </a>
-            <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">
-              Hits da Internet
-            </a>
-            <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">
-              Top 100 do Mundo
-            </a>
-            <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">
-              Gostos Diferentes
-            </a>
-            <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">
-              Sofrencia do Sertanejo
-            </a>
-            <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">
-              My Playlist de Trap
-            </a>
-            <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">
-              Playlist Funk Antigo
-            </a>
-            <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">
-              Funk ATUALIZADO
-            </a>
+            <PlaylistComponent label='Aniversarios' />
+            <PlaylistComponent label='Top Hits Brazil' />
+            <PlaylistComponent label='Hits da Internet' />
+            <PlaylistComponent label='Top 100 do Mundo' />
+            <PlaylistComponent label='Gostos Diferentes' />              
+            <PlaylistComponent label='Sofrencia do Sertanejo' />
+            <PlaylistComponent label='My Playlist de Trap' />
+            <PlaylistComponent label='Playlist Funk Antigo' />
+            <PlaylistComponent label='Funk ATUALIZADO' />
           </nav>
         </aside>
   )

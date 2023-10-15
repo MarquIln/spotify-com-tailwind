@@ -1,9 +1,7 @@
 import {
   ChevronLeft,
   ChevronRight,
-  Play
 } from "lucide-react";
-import Image from "next/image";
 import { Footer } from "./components/Footer/Footer";
 import { Sidebar } from "./components/Sidebar/Sidebar";
 import { ImageComponent } from "./components/PlayerImage/PlayerImage";
@@ -34,12 +32,12 @@ export default function Home() {
           </div>
           <h2 className="font-semibold text-2xl mt-10">Made for Marquinho</h2>
           <div className="grid grid-cols-8 gap-4 mt-4">
-            <AlbumImageComponent label="Sera que chico estava certo" />
-            <AlbumImageComponent label="Sera que chico estava certo" />
-            <AlbumImageComponent label="Sera que chico estava certo" />
-            <AlbumImageComponent label="Sera que chico estava certo" />
-            <AlbumImageComponent label="Sera que chico estava certo" />
-            <AlbumImageComponent label="Sera que chico estava certo" />
+            <AlbumImageComponent label="Sera que chico estava certo ?" />
+            <AlbumImageComponent label="Sera que chico estava certo ?" />
+            <AlbumImageComponent label="Sera que chico estava certo ?" />
+            <AlbumImageComponent label="Sera que chico estava certo ?" />
+            <AlbumImageComponent label="Sera que chico estava certo ?" />
+            <AlbumImageComponent label="Sera que chico estava certo ?" />
           </div>
         </main>
       </div>
